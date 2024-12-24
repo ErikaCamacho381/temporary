@@ -1,0 +1,40 @@
+POST http://localhost:9005/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "antonioc",
+    "name": "joer",
+    "lastname": "Camacho",
+    "address": "calle 90 robledo",
+    "phone": "302987125",
+    "email": "antonioc@gmail.com",
+    "password": "9898980"
+}
+
+###
+
+GET http://localhost:9005/api/users/ HTTP/1.1
+
+###
+
+PUT  http://localhost:9005/api/users/6768b80dc81930b8e27c3112 HTTP/1.1
+Content-Type: application/json
+
+{
+    "address": "calle 88 Colores",
+    "phone": "3102225564",
+    "email": "eccg28@gmail.com",
+    "password": "000000"
+}
+
+###
+
+DELETE  http://localhost:9005/api/users/6768b80dc81930b8e27c3112 HTTP/1.1
+
+###
+POST http://localhost:9005/api/patients HTTP/1.1
+content-type: application/json
+
+{
+
+}
